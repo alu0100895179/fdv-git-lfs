@@ -2,7 +2,7 @@
 
 En este documento detallo el proceso que he seguido para configurar un repositorio con soporte para archivos pesados y gestionar el flujo de trabajo utilizando la extensión **Git Large File Storage** (comúnmente conocido como *Git LFS*).
 
-![Demo](Docs/lfs_06.gif)
+![Demo](Docs/lfs_07.gif)
 
 ## Introducción
 Se trata de una extensión de código abierto para el sistema de control de versiones `Git`. Fue diseñada con el objetivo de manejar proyectos que contienen archivos de gran tamaño, muy común en el desarrollo de videojuegos, de manera que está optimizado para reemplazar archivos binarios pesados (como audio, texturas y modelos) por punteros de texto ligero dentro del repositorio.
@@ -83,11 +83,13 @@ Seguí trabajando sobre el repositorio para preparar la entrega final:
 * Grabé y añadí un **Gif animado** de la ejecución mostrando el mensaje en consola.
 
 ## Sincronización final (`Push`)
-Para la última tarea, procedí a subir todo al repositorio remoto. Ejecuté el comando `push` y observé cómo los objetos LFS se subían mediante su propio protocolo, separado de los objetos de Git.
+Para la última tarea, procedí a subir todo al repositorio remoto. Ejecuté el comando `push` y observé cómo los objetos LFS se subían también.
+
+![Subida de los ficheros al repo](Docs/lfs_05.png)
 
 Finalmente, verifiqué la subida en la web:
 1.  Comprobé que la **textura** tiene la etiqueta *LFS*.
 2.  Aseguré que el `README.md` se visualiza correctamente.
 3.  Generé el `.zip` del repositorio para la entrega.
 
-![Verificación en repositorio remoto](Docs/lfs_05.png)
+![Verificación en repositorio remoto](Docs/lfs_06.png)
